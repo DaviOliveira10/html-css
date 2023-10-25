@@ -1,0 +1,17 @@
+body {
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: justify;
+}
+h1{
+    color: brown;
+    background-color: black;
+}
+h2 {
+    color: rgb(36, 131, 41);
+    background-color: chocolate;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
