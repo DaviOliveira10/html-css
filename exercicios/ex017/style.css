@@ -1,0 +1,16 @@
+body{
+    font: 14pt arial;
+}
+p.esquerda{
+    text-align: left;
+}
+p.direita{
+    text-align: right;
+}
+p.centro{
+    text-align: center;
+
+}
+p.justificado{
+    text-align: justify;
+}
