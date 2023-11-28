@@ -16,51 +16,104 @@
     --cor03: #2fa866;
     --cor04: #1a5c37;
     --cor05: #063d1e;
-
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', sans-serif;
     --fonte-android: "android", sans-serif;
 
 }
-
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-padrao);
+    /* border: red solid 2px; */
 
 }
 header{
+    background-image: linear-gradient(var(--cor03), var(--cor04));
     background-color: var(--cor03);
+    text-align: center;
+    padding: 3.0em;
+    min-width: 300px;
+    max-width: 100%;
+    
     
 }
-
 header > h1{
     color: white;
     font-family: var(--fonte-destaque);
-    margin-bottom: 1.0em;
+    font-size: 3.0em;
+    font-weight: 400;
+    margin-bottom: 0.3em;
     text-align: center;
+    text-shadow: 1px 1px 2px  black;
+
 }
 header > p{
     color: white;
     text-align: center;
+    font-size: 1.2em;
+    line-height: 1.2em;
 }
 nav{
-    background-color: var(--cor05);
+    background-color: var(--cor04);
+    padding: 0.7em;
+    min-width: 300px;
+}
+nav > a{
+    color: var(--cor01);
+    cursor: pointer;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: .5s;
+    border-radius: 5px;
+    
+}
+nav > a:hover{
+    background-color: #83e1ad;
+    color: #063d1e;
+   
 }
 main{
     background-color: white;
-    max-width: 800px;
+    min-width: 300px;
+    max-width: 1000px;
     margin: auto;
     padding: 15px;
 }
 main h1{
+    
     color: var(--cor05);
     font-family: var(--fonte-android);
     margin-bottom: 0.5em;
 }
 main h2{
+    background-image: linear-gradient(90deg,  var(--cor01), white);
     font-family: var(--fonte-android);
-    color: var(--cor05);
+    color: var(--cor04);
+    margin-top: 0.5em;
+    font-size: 1.3em;
+    padding-left: 0.5em;
+    font-weight: 300;
     margin-bottom: 0.5em;
+}
+p{
+    text-align:justify;
+    text-indent: 1.4em;
+    line-height: 2.0em;
+}
+p > strong{
+    color: var(--cor04);
+}
+p > a{
+    background-color: var(--cor01);
+    padding: 0.2em;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor05);
+
+}
+p > a:hover{
+    text-decoration: underline;
 }
 
 footer{
@@ -76,4 +129,19 @@ footer > p{
 }
 footer > p > a{
     color: white;
+}
+img.responsivo{
+    width: 100%;
+}
+img.center{
+    /* border: solid red 2px; */
+    display: block;
+    margin: auto;
+}
+iframe.video{
+    width: 100%;
+}
+ul > li{
+    margin-left: 15px;
+    border: red solid 2px;
 }
