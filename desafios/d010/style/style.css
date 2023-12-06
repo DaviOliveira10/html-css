@@ -24,14 +24,13 @@
 body{
     background-color: var(--cor-de-fundo);
     font-family: var(--fonte-padrao);
-    /* border: red solid 2px; */
 
 }
 header{
     background-image: linear-gradient(var(--cor03), var(--cor04));
     background-color: var(--cor03);
     text-align: center;
-    padding: 3.0em;
+    padding: 2.7em;
     min-width: 300px;
     max-width: 100%;
     
@@ -49,9 +48,10 @@ header > h1{
 }
 header > p{
     color: white;
-    text-align: center;
+    text-align: center ;
     font-size: 1.2em;
     line-height: 1.2em;
+    
 }
 nav{
     background-color: var(--cor04);
@@ -64,7 +64,7 @@ nav > a{
     text-decoration: none;
     padding: 10px;
     font-weight: bold;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
     border-radius: 5px;
     
 }
@@ -78,13 +78,16 @@ main{
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
-    padding: 15px;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.420);
+    border-bottom-left-radius: 0.8em; /*anotar*/
+    border-bottom-right-radius: 0.8em;
 }
 main h1{
     
     color: var(--cor05);
     font-family: var(--fonte-android);
-    margin-bottom: 0.5em;
 }
 main h2{
     background-image: linear-gradient(90deg,  var(--cor01), white);
@@ -94,17 +97,26 @@ main h2{
     font-size: 1.3em;
     padding-left: 0.5em;
     font-weight: 300;
-    margin-bottom: 0.5em;
+    /* margin-bottom: 0.5em; */
 }
-p{
+main img.responsivo{
+    width: 100%;
+}
+main img.center{
+    /* border: solid red 2px; */
+    display: block;
+    margin: auto;
+}
+main p{
     text-align:justify;
     text-indent: 1.4em;
-    line-height: 2.0em;
+    line-height: 1.8em;
+    margin: 0.7em 0em;
 }
-p > strong{
+main strong{
     color: var(--cor04);
 }
-p > a{
+main a{
     background-color: var(--cor01);
     padding: 0.2em;
     text-decoration: none;
@@ -112,36 +124,70 @@ p > a{
     color: var(--cor05);
 
 }
-p > a:hover{
+main a:hover{
     text-decoration: underline;
 }
+a.externo:after{
+    content: "\1F517"; /*anotar*/
+}
+div.video{
+    background-color: var(--cor05);
+    margin: 0px -20px 20px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 56.5%;
+}
+div.video > iframe{ /*anotar*/
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
 
+}
+aside{
+    background-color: var(--cor01);
+    padding: 0.7em;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.27);
+
+}
+aside > ul{ /*anotar*/
+    list-style-type: "\2705\00A0"; /*ESSE ESPAÇO NÃO É COMPATIVEL COM TODOS OS NAVEGADORES*/
+    list-style-position: inside;
+    columns: 2;
+    
+}
+aside > h3{
+    background-color: var(--cor04);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: normal;
+    color: white;
+    padding: 5px;
+    margin: -11px -11px 0px -11px;
+    border-radius: 7px 7px 0px 0px;
+}
+a.escuro{
+    background-color: var(--cor03);
+
+}
+a.escuro::after{
+    content: "\1F517";
+}
 footer{
     background-color: var(--cor05);
-    margin: 0;
-
-    /* align-items: center; */
-    margin: 0;
+    text-align: center;
+    padding: 0.3em;
+    
+   
 }
 footer > p{
-    color: rgb(171, 170, 170);
-    text-align: center;
+    color: rgb(215, 215, 215);
+
 }
-footer > p > a{
-    color: white;
-}
-img.responsivo{
-    width: 100%;
-}
-img.center{
-    /* border: solid red 2px; */
-    display: block;
-    margin: auto;
-}
-iframe.video{
-    width: 100%;
-}
-ul > li{
-    margin-left: 15px;
-    border: red solid 2px;
+footer a{
+    background-color: var(--cor04);
+    color: rgb(237, 237, 237);
+    font-weight: bolder;
+    
 }
