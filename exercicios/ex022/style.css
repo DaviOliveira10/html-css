@@ -1,0 +1,30 @@
+body{
+    background-color: darkgray;
+}
+div.quadrado{
+    background-color: blueviolet;
+    display: inline-block;
+    border: solid 4px rgb(0, 0, 0);
+    border-radius: 15px;
+    height: 300px;
+    width: 300px;
+}
+div{
+    background-color: aqua;
+
+}
+div#primeiro{
+    background-image: url(imagens/wallpaper002.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#segundo{
+    background-image: url(imagens/wallpaper005.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#terceiro{
+    background-image: url(imagens/wallpaper003.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
